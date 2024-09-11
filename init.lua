@@ -110,6 +110,11 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Lixen: Keybind to select autocomplete from the list
+-- vim.keymap.set('i', '<Tab>', function()
+--  return vim.fn.pumvisible() == 1 and '<C-y>' or '<Tab>'
+-- end, { expr = true, replace_keycodes = true })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
